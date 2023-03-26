@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab06_gui.controller.popUpController">
+   <children>
+      <Text layoutX="113.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To:" />
+      <Text layoutX="426.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="From:" />
+      <Text fx:id="fieldTo" layoutX="110.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text fx:id="fieldFrom" layoutX="430.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text fx:id="fieldMessage" layoutX="289.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text fx:id="fieldDescription" layoutX="289.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text layoutX="110.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description:" />
+      <Text layoutX="118.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Message:" />
+   </children>
+</AnchorPane>

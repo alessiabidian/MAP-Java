@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="520.0" prefWidth="668.0" xmlns="http://javafx.com/javafx/17.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab06_gui.controller.MessageTaskController">
+   <children>
+      <SplitPane dividerPositions="0.6669242658423494" orientation="VERTICAL" prefHeight="520.0" prefWidth="668.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="666.0">
+               <children>
+                  <TableView fx:id="tableView" prefHeight="402.0" prefWidth="666.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="tableColumnTo" prefWidth="167.0" text="To" />
+                      <TableColumn fx:id="tableColumnFrom" prefWidth="167.0" text="From" />
+                        <TableColumn fx:id="tableColumnMessage" prefWidth="167.0" text="Message" />
+                        <TableColumn fx:id="tableColumnData" prefWidth="167.0" text="Date" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <TextField fx:id="toTextField" layoutX="14.0" layoutY="20.0" text="To:" />
+                  <TextField fx:id="descriptionTextField" layoutX="183.0" layoutY="20.0" prefHeight="25.0" prefWidth="149.0" text="Description:" />
+                  <TextArea fx:id="messageTextField" layoutX="14.0" layoutY="59.0" prefHeight="60.0" prefWidth="318.0" text="Message:" />
+                  <TextField fx:id="searchMessagesField" layoutX="389.0" layoutY="20.0" onKeyTyped="#handleFilterMessages" onMouseClicked="#handleClickSearch" prefHeight="25.0" prefWidth="259.0" text="Search for messages:" />
+                  <Button fx:id="sendMessageButton" layoutX="115.0" layoutY="129.0" mnemonicParsing="false" onAction="#handleSendMessage" prefHeight="25.0" prefWidth="116.0" style="-fx-background-color: #9ddefc;" text="Send" />
+                  <Button fx:id="deleteMessageButton" layoutX="461.0" layoutY="72.0" mnemonicParsing="false" onAction="#handleDeleteMessage" prefHeight="25.0" prefWidth="116.0" text="Delete" />
+                  <Button fx:id="seeMessageDetailsbutton" onAction="#handleSeeDetails" layoutX="457.0" layoutY="116.0" mnemonicParsing="false" text="See Message Details" />
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
